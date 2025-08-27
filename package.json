@@ -1,0 +1,19 @@
+{
+  "name": "lightroom_vite_project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "popify-js": "^0.1.2",
+    "toastify": "^2.0.1",
+    "toastify-js": "^1.12.0"
+  }
+}
