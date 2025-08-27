@@ -2,130 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link rel="icon" type="image/svg+xml" href="./src/images/shopping-bag.svg" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Light Room</title>
+    <title>GlamZone</title>
     <link rel="stylesheet" href="/src/css/styles.css" />
-
+    <link href="./src/css/new_styles.css" rel="stylesheet">
   </head>
   <body>
 
     <!--? ======================== Header ================== -->
 
-    <header class="header" id="header">
-      <p class="logo">Потужний ручний відпарювач</p>
-    </header>
+    
     <!--? ======================== Hero ================== -->
 
   <main>
-    <section class="hero container">
-     <div class="countdown-wrapper">
-  <div class="countdown-left">
-    <img src="./src/images/clock.svg" alt="Іконка" />
-    <span>Кінець  пропозиції через:</span>
-  </div>
-  <div class="countdown-right">
-    <div class="countdown-labels">
-      <span>годин</span>
-      <span>хвилин</span>
-      <span>секунд</span>
-    </div>
-    <div class="countdown-time">
-      <span id="hours">00</span> :
-      <span id="minutes">00</span> :
-      <span id="seconds">00</span>
-    </div>
-    <div class="countdown-line"></div>
-  </div>
-</div>
-   
-      <img
-        src="./src/images/steamer/HeroImg.jpg"
-        alt="Zepline Steamer"
-        loading="lazy"
-        class="hero-image"
-      />
-
-  <div class="benefits-bar">
-    <div class="benefit-item">
-      <img src="./src/images/certificate.svg" alt="Якість" class="benefit-icon">
-      <p>Сертифікати якості</p>
-    </div>
-    <div class="benefit-item">
-      <img src="./src/images/shipping.svg" alt="Доставка" class="benefit-icon">
-      <p>Швидка доставка</p>
-    </div>
-    <div class="benefit-item">
-      <img src="./src/images/cash.svg" alt="Оплата" class="benefit-icon">
-      <p>Оплата при отриманні</p>
-    </div>
-    </div>
-
-      <ul class="list sale-container">
-        <li class="sale-item new-price-box">
-          <!-- <p class="new-price">Нова ціна</p> -->
-          <p class="sale">Економія 45%</p>
-          <span class="new-price">899 грн</span>
-        </li>        
-        <li class="sale-item old-price-box">
-          <p class="old-price"> Стара ціна</p>
-          <span class="crossed">1640 грн</span>
-        </li>
-      </ul>
-
-      <form id="order-form" class="order-form">
-        <h2 class="section-title">Оформити замовлення</h2>
-        <div class="order-inputs-container">
-          <img src="./src/images/person.svg" alt="Якість" class="benefit-icon">
-          <input type="text" name="name" placeholder="Ваше Ім’я та Прізвище" required class="order-input" />
+    <section class="head_section container">
+      <h2>GlamZone<br><p>•Твій магазин якісного одягу•</p></h2>
+      <h3>Стильна міді-сукня</h3>
+      <img src="./src/images/steamer/Hero.png" alt="">
+      <div class="price_block">
+        <div class="pr_bl"></div>
+        <div class="cost_block">
+          <h6 class="old_price pr">Звичайна ціна:<br><p>1040грн</p></h6>
+          <h6 class="new_price pr ">Ціна сьогодні:<br><p class="shake wow  animated" style="visibility: visible; animation-name: shake;">595грн</p>
+          </h6>
         </div>
-        <div class="order-inputs-container">
-          <img src="./src/images/phone.svg" alt="Якість" class="benefit-icon">
-          <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+        <div class="pr_bl"></div>
+      </div>
+      <p class="del">Доставка поштою <span>2-5 днів!</span></p>
+      <div class="benefits_block">
+        <div class="benef_card">
+        <!--  <img src="1/apel1.jpg" alt=""> -->
+          <h6>Ідеальний вільний фасон</h6>
         </div>
-        <label for="address"> Адреса доставки</label>
-        <div class="order-inputs-container">
-        <img src="./src/images/shipping_black.svg" alt="Якість" class="benefit-icon">
-        <input type="text" name="address" placeholder="Місто, Відділення Нової Пошти" required class="order-input" />
+        <div class="benef_card">
+        <!--  <img src="2/el2.jpg" alt=""> -->
+          <h6>Натуральна тканина</h6>
         </div>
-        <div class="order-inputs-container">
-          <img src="./src/images/shipping.svg" alt="Якість" class="benefit-icon">
-        <select class="order-selector" name="color" required>
-          <option value="" disabled selected>Оберіть колір</option>
-          <option value="blue">Синій </option>
-          <option value="red">Червоний</option>
-          <option value="grey">Сірий</option>
-          <option value="black">Чорний</option>
-        </select>
+        <div class="benef_card">
+        <!--  <img src="3/mal4.jpg" alt=""> -->
+          <h6>Гарантована якість пошиття</h6>
         </div>
-    
-        <button type="submit" class="hero-btn">Замовити</button>
-      </form>
-
+      </div>
+      <a href="#order" class="button">Обрати колір</a>
+      <h5 class="trace">Залишилось <span>18</span> одиниць по акції</h5>
     </section>
+    
+    
     <!--? ======================== Video ================== -->
-<section class="video-section container">
+<!-- <section class="video-section container">
 
   <video controls playsinline  width="100%" style="max-width: 420px; border-radius: 12px;" class="video-player">
-    <source src="./src/images/steamer/steamer_video.MP4" type="video/mp4">
+    <source src="./src/images/steamer/" type="video/mp4">
     Ваш браузер не поддерживает видео.
   </video>
-</section>
+</section> -->
 
     <!--? =========================== Details ================== -->
 
-<section class="product-details container">
-      <h2 class="section-title">Вертикальний відпарювач для одягу Zepline</h2>
-      <p class="section-text">
-         Відпарювач Zepline ZP-204 — це зручний пристрій для швидкого та якісного прасування без використання громіздкої прасувальної дошки. Завдяки йому можна відпарювати штори та тюль, не знімаючи їх, що значно полегшує догляд за домом. Висока температура пари не лише розгладжує одяг, але й знищує пилових кліщів, бактерії та мікроби, що робить пристрій корисним для обробки м’яких меблів, подушок і дитячих іграшок.
-      </p>
-      <p class="section-text">
-         Zepline — це сучасний відпарювач, що поєднує мобільність, потужність і стиль. Відмінне рішення для тих, хто хоче виглядати охайно без зайвого клопоту.
-      </p>
-    </section>
 
-    
+    <section class="showroom_section container">
+      <h2 class="sec_title"><span>Характеристики</span><br>Сукні</h2>
+      
+      <div class="desc_bl">
+        <ul class="description_block">
+          <li><b>Матеріал:</b> <span>Двонитка</span></li>
+          <li><b>Розміри:</b> <span>42-44, 46-48, 50-52, 54-56</span></li>
+          <li><b></b></li>
+          <li><b>Опис:</b><span> Ця сукня ідеально підходить як  для вечірніх виходів, так і для повсякденного носіння.
+Тканина не мнеться та дуже приємна на дотик.</span></li>
+      </ul></div>      
+      
+      <img src="./src/images/steamer/table.png" alt="таблиця розмірів">
+
+    </section>
     
     <!--? ======================== Gallery ================== -->
     <section class="product-gallery container gallery">
@@ -164,65 +117,7 @@
 
 <!-- ? ====================== Reviews ============== -->
 
-<section class="reviews-section container">
-  <h2 class="reviews-title">Відгуки покупців</h2>
-  <div class="gallery-item review-card">
-    <div class="slider-container">
-      <div class="slider-track">
-        <img src="./src/images/steamer/review_1.PNG" class="slide" alt="black variant"/>
-        <img src="./src/images/steamer/review_2.PNG" class="slide" alt="blue variant"/>
-        <img src="./src/images/steamer/review_3.PNG" class="slide" alt="red variant"/>
-        <img src="./src/images/steamer/review_4.PNG" class="slide" alt="grey variant"/>
-        
-      </div>
-      <div class="indicators"></div>
-    </div>
-    
-  </div>
-  <!-- <div class="reviews">
 
-    <div class="review-card">
-      <div class="review-header">
-        <div class="avatar">І</div>
-        <p class="review-author">Ірина, м. Львів</p>
-      </div>
-      <p class="review-text">
-        “Zepline моя паличка виручалочка! Вранці більше не треба діставати праску. Усього кілька хвилин і сукня готова. Раніше такі речі прасувала вдвічі довше.”
-      </p>
-    </div>
-
-    <div class="review-card">
-      <div class="review-header">
-        <div class="avatar">С</div>
-        <p class="review-author">Сергій, м. Київ</p>
-      </div>
-      <p class="review-text">
-        “Часто їжджу у відрядження, тому взяв цей відпарювач спеціально для дороги. Дуже легкий, не займає багато місця в сумці. Речі після нього виглядають, як після хімчистки.”
-      </p>
-    </div>
-
-    <div class="review-card">
-      <div class="review-header">
-        <div class="avatar">Т</div>
-        <p class="review-author">Тетяна, м. Харків</p>
-      </div>
-      <p class="review-text">
-        “Дуже задоволена покупкою. Відпарювач не підтікає, одяг не мокрий, як це було з дешевими аналогами. Використовую щодня — і сорочки чоловіка, і мої блузки, все як новеньке.”
-      </p>
-    </div>
-
-    <div class="review-card">
-      <div class="review-header">
-        <div class="avatar">Д</div>
-        <p class="review-author">Дмитро, м. Одеса</p>
-      </div>
-      <p class="review-text">
-        “Я не фанат прасування, і Zepline реально зручна річ для таких. Натиснув кнопку і через півхвилини можеш прибрати любі складки. Швидко, просто і без мороки.”
-      </p>
-    </div>
-
-  </div> -->
-</section>
 
 <!-- ? ======================= Delivery ============== -->
  <section class="delivery-section container">
@@ -307,25 +202,38 @@
   </ul>
 </section>
 <!-- ? ================================= Order ========= -->
-      <!-- <section id="order" class="order-form container">
-  <h2 class="section-title">Оформити замовлення</h2>
-  <p><strong>Ціна: 900 грн</strong></p>
 
-  <form id="order-form">
-    <input type="text" name="name" placeholder="Ваше ім’я" required class="order-input" />
-    <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+<section id="order" class="order-section container">
+      <form id="order-form" class="order-form">
+        <h2 class="section-title">Оформити замовлення</h2>
+        <div class="order-inputs-container">
+          <img src="./src/images/person.svg" alt="Якість" class="benefit-icon">
+          <input type="text" name="name" placeholder="Ваше Ім’я та Прізвище" required class="order-input" />
+        </div>
+        <div class="order-inputs-container">
+          <img src="./src/images/phone.svg" alt="Якість" class="benefit-icon">
+          <input type="tel" name="phone" placeholder="Телефон" required class="order-input" />
+        </div>
+        <label for="address"> Адреса доставки</label>
+        <div class="order-inputs-container">
+        <img src="./src/images/shipping_black.svg" alt="Якість" class="benefit-icon">
+        <input type="text" name="address" placeholder="Місто, Відділення Нової Пошти" required class="order-input" />
+        </div>
+        <div class="order-inputs-container">
+          <img src="./src/images/shipping.svg" alt="Якість" class="benefit-icon">
+        <select class="order-selector" name="color" required>
+          <option value="" disabled selected>Оберіть колір</option>
+          <option value="blue">Синій </option>
+          <option value="red">Червоний</option>
+          <option value="grey">Сірий</option>
+          <option value="black">Чорний</option>
+        </select>
+        </div>
+    
+        <button type="submit" class="hero-btn">Замовити</button>
+      </form>
 
-    <select class="order-selector" name="color" required>
-      <option value="" disabled selected>Оберіть колір</option>
-      <option value="blue">Синій </option>
-      <option value="red">Червоний</option>
-      <option value="grey">Сірий</option>
-      <option value="black">Чорний</option>
-    </select>
-
-    <button type="submit" class="hero-btn">Замовити</button>
-  </form>
-</section> -->
+    </section> 
 <div class="go-up">
   <a href="#header" class="go-up-btn"> ^</a>
 </div>

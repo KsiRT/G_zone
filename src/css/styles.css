@@ -6,8 +6,9 @@
   --text-dark: #1e1e1e;
   --text-muted: #888;
   --white: #ffffff;
-  --accent: #FC5C04;
-  --accent-dark: #FF9500;
+  --accent: #FFE7DB;
+  --accent-dark: #829F82;
+  --accent-light: #758f75;
   --bg-card: #ffffff;
   --bg-sale: #fff2eb;
   --bg-feature: #fff3ea;
@@ -58,7 +59,10 @@ img {
 }
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(var(--bg-upper), var(--bg-lower));
+   background-image: url("/src/images/steamer/Minimalism\ background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--text-main);
   font-size: var(--fs-lg);
   font-weight: 500;
@@ -76,8 +80,9 @@ body {
   list-style: none;
 }
 .container {
-  max-width: 100%;
+  max-width: 480px;
   padding: 20px 15px;
+  margin: 0 auto;
 }
 .title {
   font-size: var(--fs-xl);
@@ -87,6 +92,7 @@ body {
   font-size: var(--fs-xxl);
   margin-bottom: 20px;
   color: var(--accent);
+  text-shadow: 1px 1px 2px black; 
 }
 .section-text {
   font-size: var(--fs-md);
@@ -600,3 +606,4 @@ align-items: center;
   padding: 20px;
   margin-top: 40px;
 }
+
