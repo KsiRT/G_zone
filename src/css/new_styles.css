@@ -281,11 +281,14 @@ var(--accent);
 	text-transform: uppercase;
 	font-weight: 700;
 	align-self: flex-start;
-	margin-left: 5%;
 	padding-bottom: 10px;
 	border-bottom: 2px var(--accent-dark) dotted;
   color: var(--accent-light);
   text-shadow: 1px 1px 2px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .sec_title span{
 	color: var(--accent);

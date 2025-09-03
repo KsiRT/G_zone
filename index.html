@@ -10,6 +10,21 @@
     <title>GlamZone</title>
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link href="./src/css/new_styles.css" rel="stylesheet">
+    <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '758509653566619');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=758509653566619&ev=PageView&noscript=1"
+/></noscript>
   </head>
   <body>
 
@@ -19,15 +34,15 @@
     <!--? ======================== Hero ================== -->
 
   <main>
-    <section class="head_section container">
+    <section class="head_section container" id="header">
       <h2>GlamZone<br><p>•Твій магазин якісного одягу•</p></h2>
       <h3>Стильна міді-сукня</h3>
-      <img src="./src/images/steamer/Hero.png" alt="">
+      <img src="./src/images/click_boutique/collage.jpg" alt="">
       <div class="price_block">
         <div class="pr_bl"></div>
         <div class="cost_block">
-          <h6 class="old_price pr">Звичайна ціна:<br><p>1040грн</p></h6>
-          <h6 class="new_price pr ">Ціна сьогодні:<br><p class="shake wow  animated" style="visibility: visible; animation-name: shake;">595грн</p>
+          <h6 class="old_price pr">Звичайна ціна:<br><p>1600грн</p></h6>
+          <h6 class="new_price pr ">Ціна сьогодні:<br><p class="shake wow  animated" style="visibility: visible; animation-name: shake;">1200грн</p>
           </h6>
         </div>
         <div class="pr_bl"></div>
@@ -36,7 +51,7 @@
       <div class="benefits_block">
         <div class="benef_card">
         <!--  <img src="1/apel1.jpg" alt=""> -->
-          <h6>Ідеальний вільний фасон</h6>
+          <h6>Цікавий фасон</h6>
         </div>
         <div class="benef_card">
         <!--  <img src="2/el2.jpg" alt=""> -->
@@ -47,8 +62,8 @@
           <h6>Гарантована якість пошиття</h6>
         </div>
       </div>
-      <a href="#order" class="button">Обрати колір</a>
-      <h5 class="trace">Залишилось <span>18</span> одиниць по акції</h5>
+      <a href="#gall" class="button">Обрати колір</a>
+      <h5 class="trace">Залишилось <span>19</span> одиниць по акції</h5>
     </section>
     
     
@@ -65,18 +80,18 @@
 
 
     <section class="showroom_section container">
-      <h2 class="sec_title"><span>Характеристики</span><br>Сукні</h2>
+      <h2 class="sec_title"><span>Характеристики</span>Сукні</h2>
       
       <div class="desc_bl">
         <ul class="description_block">
-          <li><b>Матеріал:</b> <span>Двонитка</span></li>
-          <li><b>Розміри:</b> <span>42-44, 46-48, 50-52, 54-56</span></li>
+          <li><b>Матеріал:</b> <span>Костюмна тканина високої якості</span></li>
+          <li><b>Розміри:</b> <span>S, M, L, XL</span></li>
           <li><b></b></li>
           <li><b>Опис:</b><span> Ця сукня ідеально підходить як  для вечірніх виходів, так і для повсякденного носіння.
-Тканина не мнеться та дуже приємна на дотик.</span></li>
+Тканина не мнеться та дуже приємна на дотик. Імітація корсету попереду, застібається на блискавку </span></li>
       </ul></div>      
       
-      <img src="./src/images/steamer/table.png" alt="таблиця розмірів">
+      <img src="./src/images/click_boutique/sizetable.jpg" alt="таблиця розмірів" width="450px">
 
     </section>
     
@@ -84,36 +99,119 @@
     <section class="product-gallery container gallery">
   <h2 class="section-title">Галерея</h2>
   
-  <!--* =============== Товар ================== -->
-  <div class="gallery-item">
+  <!--* =============== Товари ================== -->
+
+  <ul id="gall" class="gallery">
+    
+      <li class="gallery-item">
     <div class="slider-container">
       <div class="slider-track">
-        <img src="./src/images/steamer/black.webp" class="slide" alt="black variant"/>
-        <img src="./src/images/steamer/blue.jpg" class="slide" alt="blue variant"/>
-        <img src="./src/images/steamer/red.jpg" class="slide" alt="red variant"/>
-        <img src="./src/images/steamer/grey.jpg" class="slide" alt="grey variant"/>
+        <img src="./src/images/click_boutique/black1.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/click_boutique/black2.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/click_boutique/black3.jpg" class="slide" alt="red variant"/>
         
       </div>
       <div class="indicators"></div>
     </div>
-    <p class="gallery-item-name">Zepline Steamer</p>
-    <p class="gallery-text">Компактний, зручний та ефективний у будь-яких умовах.</p>
-  </div>
+    <div>
+      <p>Колір:</p>
+      <p class="gallery-item-name">Чорний </p>
+    </div>
+    <a href="#order" class="button">Замовити</a>
+  </li>
+    
+    
+      <li class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/click_boutique/blue1.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/click_boutique/blue2.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/click_boutique/blue3.jpg" class="slide" alt="red variant"/>
+        
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <div>
+      <p>Колір:</p>
+      <p class="gallery-item-name">Синій </p>
+    </div>
+    <a href="#order" class="button">Замовити</a>
+    
+  </li>
+    
+    
+      <li class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/click_boutique/brown1.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/click_boutique/brown2.jpg" class="slide" alt="blue variant"/>
+        
+        
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <div>
+      <p>Колір:</p>
+      <p class="gallery-item-name">Шоколад </p>
+    </div>
+    <a href="#order" class="button">Замовити</a>
+    
+  </li>
+    
+    
+      <li class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/click_boutique/white1.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/click_boutique/white2.jpg" class="slide" alt="blue variant"/>
+        <img src="./src/images/click_boutique/white3.jpg" class="slide" alt="red variant"/>
+        
+        
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <div>
+      <p>Колір:</p>
+      <p class="gallery-item-name">Білий </p>
+    </div>
+    <a href="#order" class="button">Замовити</a>
+    
+  </li>
+    
+    
+      <li class="gallery-item">
+    <div class="slider-container">
+      <div class="slider-track">
+        <img src="./src/images/click_boutique/bej1.jpg" class="slide" alt="black variant"/>
+        <img src="./src/images/click_boutique/bej2.jpg" class="slide" alt="blue variant"/>
+      </div>
+      <div class="indicators"></div>
+    </div>
+    <div>
+      <p>Колір:</p>
+      <p class="gallery-item-name">Беж</p>
+    </div>
+    <a href="#order" class="button">Замовити</a>
+    
+  </li>
+    
+  </ul>
+  
 </section>
 
 <!-- ? ====================== Features ============= -->
 
-<section class="product-details container">
+<!-- <section class="product-details container">
       <h2 class="section-title">Основні особливості:</h2>
 
       <ul class="product-features list">
-        <li class="prod-feature">Гаряча пара знищує до 99,9% бактерій, що дозволяє рідше прати речі та зменшити потребу в хімчистці.</li>
-        <li class="prod-feature">Ефективне усунення запахів: пара усуває запахи сигарет, їжі та поту.</li>
-        <li class="prod-feature">Місткий резервуар для води: забезпечує тривале використання без частого доливання.</li>
-        <li class="prod-feature">Компактність і зручність: пристрій можна брати з собою в подорож завдяки невеликим розмірам.</li>
-        <li class="prod-feature">Багатофункціональність: відпарювач підходить для обробки одягу з різних тканин — від делікатного шовку до щільної вовни.</li>
+        <li class="prod-feature"></li>
+        <li class="prod-feature"></li>
+        <li class="prod-feature"></li>
+        <li class="prod-feature"></li>
+        <li class="prod-feature"></li>
       </ul>
-    </section>
+    </section> -->
 
 <!-- ? ====================== Reviews ============== -->
 
@@ -126,7 +224,7 @@
 <img src="./src/images/delivery.png" alt="Умови доставки" class="delivery-image" />
 </section>
 <!-- ? ======================= FAQ =================== -->
-<section class="faq-section container">
+<!-- <section class="faq-section container">
   <h2 class="faq-title">Часті питання</h2>
   <ul class="faq list">
 
@@ -200,12 +298,12 @@
     </li>
 
   </ul>
-</section>
+</section> -->
 <!-- ? ================================= Order ========= -->
 
 <section id="order" class="order-section container">
       <form id="order-form" class="order-form">
-        <h2 class="section-title">Оформити замовлення</h2>
+        <h2 class="order-title">Оформити замовлення</h2>
         <div class="order-inputs-container">
           <img src="./src/images/person.svg" alt="Якість" class="benefit-icon">
           <input type="text" name="name" placeholder="Ваше Ім’я та Прізвище" required class="order-input" />
@@ -220,17 +318,18 @@
         <input type="text" name="address" placeholder="Місто, Відділення Нової Пошти" required class="order-input" />
         </div>
         <div class="order-inputs-container">
-          <img src="./src/images/shipping.svg" alt="Якість" class="benefit-icon">
+          <img src="./src/images/shipping-gray.svg" alt="Якість" class="benefit-icon">
         <select class="order-selector" name="color" required>
           <option value="" disabled selected>Оберіть колір</option>
-          <option value="blue">Синій </option>
-          <option value="red">Червоний</option>
-          <option value="grey">Сірий</option>
-          <option value="black">Чорний</option>
+          <option value="black">Чорний </option>
+          <option value="blue">Синій</option>
+          <option value="brown">Шоколад</option>
+          <option value="milk">Беж</option>
+          <option value="white">Білий</option>
         </select>
         </div>
     
-        <button type="submit" class="hero-btn">Замовити</button>
+        <button type="submit" class="button">Замовити</button>
       </form>
 
     </section> 
@@ -239,23 +338,9 @@
 </div>
     </main>
     <footer class="footer">
-      <p>© 2025 Zepline. Всі права захищені.</p>
+      <p>© 2025 GlamZone. Всі права захищені.</p>
     </footer>
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '712893991292985');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=712893991292985&ev=PageView&noscript=1"
-/></noscript>
+
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./src/js/gallery-slider.js" type="module"></script>
     <script src="./src/js/faq.js" type="module"></script>
