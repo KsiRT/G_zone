@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const message = `
-🛍 <b>Нове замовлення – МІДІ--сукня </b>\n
+🛍 <b>Нове замовлення – Сукня-комбез Click rkot831 </b>\n
 👤 Ім’я: <b>${name}</b>\n
 📞 Телефон: <b>${phone}</b>\n
 🏠 Адреса доставки: <b>${address}</b>\n
