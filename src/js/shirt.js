@@ -28,8 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const message = `
-🛍 <b>Нове замовлення – Вкорочена сорочка 
-арт. ter. 1043 </b>\n
+🛍 <b>Нове замовлення – Вкорочена сорочка арт. ter. 1043 </b>\n
 👤 Ім’я: <b>${name}</b>\n
 📞 Телефон: <b>${phone}</b>\n
 🏠 Адреса доставки: <b>${address}</b>\n
